@@ -267,7 +267,10 @@ def gnome_check () -> bool:
     else:
         msg_box_a = QMessageBox()
         msg_box_a.setIcon(QMessageBox.Icon.Warning)
-        msg_box_a.setText(f"Only GNOME Desktop Sessions are supported. Your current desktop session is: {current_session}")
+        msg_box_a.setText(f"""
+                          Only GNOME Desktop Sessions are supported. Your current desktop session is: 
+                          {current_desktop_session}"""
+                          )
         msg_box_a.setWindowTitle("Unsupported DESKTOP_SESSION")
         msg_box_a.exec()
         return False

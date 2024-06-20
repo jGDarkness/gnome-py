@@ -5,7 +5,7 @@ from PyQt6.QtWidgets import (
     QButtonGroup,
     QHBoxLayout,
     QLabel,
-    QMainWindow,
+    QMainWindow,n
     QPushButton,
     QSizePolicy,
     QStatusBar,
